@@ -1,0 +1,10 @@
+apiVersion: v1	
+kind: Service	
+metadata:	
+  name: hello-react-world	
+spec:	
+  selector:	
+    app: hello-react-world
+  ports:	
+  - port: 80	
+    targetPort: 80	

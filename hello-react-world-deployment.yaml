@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-react-world
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: hello-react-world
+  template:
+    metadata:
+      labels:
+        app: hello-react-world
+    spec:
+      containers:
+      - image: ghcr.io/revacommcharlie/hello-world-react:main
+        name: hello-react-world
+        ports:
+        - containerPort: 80
