@@ -4,3 +4,4 @@ namePrefix: kustomize-
 resources:
 - hello-react-world-deployment.yaml
 - hello-react-world-svc.yaml
+- hello-react-world-vs.yaml

@@ -1,0 +1,18 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  labels:
+    app.kubernetes.io/name: hello-react-world
+  name: hello-react-world
+  namespace: default
+spec:
+  gateways:
+  - istio-system/public
+  hosts:
+  - hello-react-world.bigbang.dev
+  http:
+  - route:
+    - destination:
+        host: hello-react-world.default.svc.cluster.local
+        port:
+          number: 80
