@@ -13,6 +13,6 @@ spec:
   http:
   - route:
     - destination:
-        host: hello-react-world.default.svc.cluster.local
+        host: kustomize-hello-react-world.default.svc.cluster.local
         port:
           number: 80
