@@ -7,4 +7,5 @@ spec:
     app: hello-react-world
   ports:	
   - port: 80	
-    targetPort: 80	
+    targetPort: 8080
+
